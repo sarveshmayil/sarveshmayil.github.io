@@ -11,30 +11,36 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mechanical Engineering, Texas A&M University - 2022
+  * Minor in Computer Science
+  * Summa Cum Laude
+  * Engineering Honors
+* M.S. in Robotics, University of Michigan - 2023
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2022: Robotics Software Engineering Intern
+  * Robotic Research / RRAI
+  * Built containerized version of drone simulation using Docker to improve computational efficiency and speed up development process while maintaining familiar interfacing
+  * Demonstrated virtual sensor, tele-op, route planning/following capabilities using Project GL UE4simulation with Army Ground Vehicle Systems Center engineers
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Languages
+  * Python
+  * C++
+  * Matlab
+* Packages
+  * ROS
+  * PyTorch
+  * Keras
+  * Tensorflow
+  * Sci-Kit Learn
+* Software
+  * Linux
+  * Docker
+  * Solidworks
+  * Arduino
 
 Publications
 ======
@@ -42,18 +48,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Eagle Scout
+* Presidential Volunteer Service Award
