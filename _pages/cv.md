@@ -26,21 +26,9 @@ Work experience
   
 Skills
 ======
-* Languages
-  * Python
-  * C++
-  * Matlab
-* Packages
-  * ROS
-  * PyTorch
-  * Keras
-  * Tensorflow
-  * Sci-Kit Learn
-* Software
-  * Linux
-  * Docker
-  * Solidworks
-  * Arduino
+* Languages: Python, C++, Matlab
+* Packages: ROS, PyTorch, Keras, Tensorflow, Sci-Kit Learn
+* Software: Linux, Docker, Solidworks, Arduino
 
 Publications
 ======
