@@ -1,6 +1,6 @@
 ---
 title: "NeRF-SLAM"
-excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/room0_ours.png'>"
+excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/room0_ours.png' width='500'>"
 collection: projects
 ---
 
