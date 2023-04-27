@@ -1,6 +1,6 @@
 ---
 title: "NeRF-SLAM"
-excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/500x300.png'>"
+excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/room0_ours.png'>"
 collection: projects
 ---
 
@@ -15,7 +15,8 @@ Below, we demonstrate NeRF-SLAM performing SLAM and doing 3D reconstruction for 
 
 <img src="/images/room0-building-nerf.gif" />
 
+Some qualitative comparisons for NeRF-SLAM's performance on real-world custom datasets are shown below. On top is the real image from the video and on the bottom is a recreated image from the NeRF at approximately the same location.
 
-Some qualitative comparisons for NeRF-SLAM's performance on real-world custom datasets are shown below. On the left is the real image from the video and on the right is a recreated image from the NeRF at approximately the same location.
+<img src="/images/kitchen_real_2.jpg" /> <img src="/images/kitchen_nerf_2.jpg" />
 
-<img src="/images/kitchen_real_2.jpg" /> <img src="/images/kitchen_ours_2.jpg" />
+The full report for this work can be found [here](https://sarveshmayil.github.io/files/NeRF-SLAM.pdf)
