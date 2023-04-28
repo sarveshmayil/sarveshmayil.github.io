@@ -1,6 +1,6 @@
 ---
 title: "Low-light Visual SLAM"
-excerpt: "A comprehensive comparison of low-light visual SLAM pipelines<br/><img src='/images/kitti.gif' width='500'>"
+excerpt: "A comprehensive comparison of low-light visual SLAM pipelines<br/><img src='/images/LL-slam/kitti.gif' width='500'>"
 collection: projects
 ---
 
@@ -12,15 +12,15 @@ We compare the performance of four different image enhancement modules (Enlighte
 
 A qualitative comparison of the performance of each of the image enhancement modules can be seen below.
 
-<img src="/images/LL-slam-comparison.png" />
+<img src="/images/LL-slam/LL-slam-comparison.png" />
 
 After performing SLAM with the entire pipelines, we see best trajectory results for each SLAM framework on the datasets.
 
-<img src="/images/LL-slam-tracking.png" />
+<img src="/images/LL-slam/LL-slam-tracking.png" />
 
 We see the real-time performance of the ORB-SLAM3 and SuperPoint-SLAM frameworks on a KITTI sequence below. (ORB-SLAM3 on top and SuperPoint-SLAM below). The green points represent detected features.
 
-<img src="/images/kitti-orb3.gif" />
-<img src="/images/kitti-superpoint.gif" />
+<img src="/images/LL-slam/kitti-orb3.gif" width="700"/>
+<img src="/images/LL-slam/kitti-superpoint.gif" width="700"/>
 
 The full report for this work and results can be found [here](https://sarveshmayil.github.io/files/Twilight-SLAM.pdf)
