@@ -1,6 +1,6 @@
 ---
 title: "NeRF-SLAM"
-excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/room0_ours.png' width='500'>"
+excerpt: "Visual SLAM using neural radiance fields<br/><img src='/images/nerf-slam-kitchen.gif' width='500'>"
 collection: projects
 ---
 
@@ -11,12 +11,15 @@ NeRF-SLAM was developed by Antoni Rosinol, and a public repository of NeRF-SLAM 
 The code for this project can be found [here](https://github.com/sarveshmayil/NeRF-SLAM-docker).
 
 
-Below, we demonstrate NeRF-SLAM performing SLAM and doing 3D reconstruction for one of the Replica datasets. The video is sped up 3x and does not convey real-time performance.
+Below, we demonstrate NeRF-SLAM performing SLAM and doing 3D reconstruction for one of the Replica datasets. The video is sped up 4x and does not convey real-time performance.
 
 <img src="/images/room0-building-nerf.gif" />
 
-Some qualitative comparisons for NeRF-SLAM's performance on real-world custom datasets are shown below. On top is the real image from the video and on the bottom is a recreated image from the NeRF at approximately the same location.
+Some qualitative comparisons for NeRF-SLAM's performance on real-world custom datasets are shown below. On the left is the real image from the video and on the right is a recreated image from the NeRF at approximately the same location.
 
-<img src="/images/kitchen_real_2.jpg" /> <img src="/images/kitchen_nerf_2.jpg" />
+<p float="left">
+  <img src="/images/kitchen_real_2.jpg" width="500" />
+  <img src="/images/kitchen_nerf_2.jpg" width="500" /> 
+</p>
 
 The full report for this work can be found [here](https://sarveshmayil.github.io/files/NeRF-SLAM.pdf)
