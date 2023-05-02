@@ -12,8 +12,8 @@ We present Reshaping Viscoelastic-String Path-Planner a path planner that reshap
 
 BibTeX: \\
 @article{mayilvahanan2023reshaping, \\
-  \ttitle={Reshaping Viscoelastic-String Path-Planner (RVP)}, \\
-  \tauthor={Mayilvahanan, Sarvesh and Sarvesh, Akshay and Gopalswamy, Swaminathan}, \\
-  \tjournal={arXiv preprint arXiv:2303.00947}, \\
-  \tyear={2023} \\
+>>>> title={Reshaping Viscoelastic-String Path-Planner (RVP)}, \\
+>>>> author={Mayilvahanan, Sarvesh and Sarvesh, Akshay and Gopalswamy, Swaminathan}, \\
+>>>> journal={arXiv preprint arXiv:2303.00947}, \\
+>>>> year={2023} \\
 }
