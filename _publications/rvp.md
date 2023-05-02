@@ -10,12 +10,10 @@ citation: 'Mayilvahanan, Sarvesh, Akshay Sarvesh, and Swaminathan Gopalswamy. "R
 ---
 We present Reshaping Viscoelastic-String Path-Planner a path planner that reshapes a desired global plan for a robotic vehicle based on sensor observations of the environment. We model the path to be a viscoelastic string with shape preserving tendencies, approximated by a connected series of springs, masses, and dampers. The resultant path is then reshaped according to the forces emanating from the obstacles until an equilibrium is reached.
 
-[Download paper here](https://arxiv.org/abs/2303.00947)
-
 BibTeX: \\
 @article{mayilvahanan2023reshaping, \\
-  title={Reshaping Viscoelastic-String Path-Planner (RVP)}, \\
-  author={Mayilvahanan, Sarvesh and Sarvesh, Akshay and Gopalswamy, Swaminathan}, \\
-  journal={arXiv preprint arXiv:2303.00947}, \\
-  year={2023} \\
+  \ttitle={Reshaping Viscoelastic-String Path-Planner (RVP)}, \\
+  \tauthor={Mayilvahanan, Sarvesh and Sarvesh, Akshay and Gopalswamy, Swaminathan}, \\
+  \tjournal={arXiv preprint arXiv:2303.00947}, \\
+  \tyear={2023} \\
 }
