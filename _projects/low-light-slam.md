@@ -23,4 +23,4 @@ We see the real-time performance of the ORB-SLAM3 and SuperPoint-SLAM frameworks
 <img src="/images/LL-slam/kitti-orb3.gif" width="700"/>
 <img src="/images/LL-slam/kitti-superpoint.gif" width="700"/>
 
-The full report for this work and results can be found [here](https://sarveshmayil.github.io/files/Twilight-SLAM.pdf)
+The full report for this work and results can be found [here](https://arxiv.org/abs/2304.11310)
