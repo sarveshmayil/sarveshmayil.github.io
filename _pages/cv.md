@@ -19,11 +19,10 @@ Education
 
 Work experience
 ======
-* Summer 2023: Deep Learning / Perception Intern
-  * Robotic Research / RRAI
+* Summer 2023: Deep Learning / Perception Intern @ Robotic Research / RRAI
+  * Developing automatic semantic segmentation tools using Facebook AI Research's state-of-the-art [Segment Anything Model](https://segment-anything.com/) (SAM)
 
-* Summer 2022: Robotics Software Engineering Intern
-  * Robotic Research / RRAI
+* Summer 2022: Robotics Software Engineering Intern @ Robotic Research / RRAI
   * Built containerized version of drone simulation using Docker to improve computational efficiency and speed up development process while maintaining familiar interfacing
   * Demonstrated virtual sensor, tele-op, route planning/following capabilities using Project GL UE4 simulation with Army Ground Vehicle Systems Center engineers
   
