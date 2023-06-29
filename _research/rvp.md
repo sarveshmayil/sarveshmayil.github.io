@@ -1,5 +1,5 @@
 ---
-title: "Reshaping Viscoelastic-string Path Planner (RVP)"
+title: "Reshaping Viscoelastic-String Path Planner (RVP)"
 excerpt: "A physics-based path planner for autonomous vehicles<br/><img src='/images/rvp/scenario1.gif' width='300'>"
 collection: research
 ---
