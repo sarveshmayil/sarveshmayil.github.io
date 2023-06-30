@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Differential-Drive Robot"
-excerpt: "Developing autonomous capabilities for a small wheeled robot.<br/><img src='/images/botlab/mbot.gif' width='500'>"
+excerpt: "Developing autonomous capabilities for a small wheeled robot.<br/><img src='/images/botlab/mbot.jpg' width='500'>"
 collection: projects
 ---
 
