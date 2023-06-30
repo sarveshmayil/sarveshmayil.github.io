@@ -10,7 +10,7 @@ The MBot is equipped with a scanning 2D LiDAR and a MEMS 3-axis IMU along with t
 
 The functionality of our MBot can be broken down into three main categories: acting, perception, and reasoning.
 
-##### Acting
+### Acting
 
 The controller and odometry blocks make up the acting portion of the MBot. The odometry is fundamental to determining the bot's current position. Given a goal point and current position, the controller is necessary to generate commands for the motors to move the bot to the goal position.
 
@@ -18,7 +18,7 @@ The control stack consists of 3 main parts: a motion controller, body frame cont
 
 The odometry system uses encoder measurements from the motors to update the robot's position estimate. Using a motion model, the odometry position estimate is updated at each timestep. Additionally, the gyro sensor is used for gyrodometry fusion where the gyro data is used to correct any incorrect odometry measurements based purely on encoder values.
 
-##### Perception
+### Perception
 
 The perception portion of the MBot is primarily composed of a SLAM system, which can be broken down into Mapping and Localization as shown in the pose estimation pipeline below.
 
@@ -34,7 +34,7 @@ The significant improvement of the SLAM pose over the pure odometry (encoder bas
 
 We see that the SLAM pose (blue) is almost identical to the true pose (green) as opposed to the pure odometry pose (light green), which experiences significant drift over time.
 
-##### Reasoning
+### Reasoning
 
 The reasoning of the MBot is handled by the path planning and exploration system, which is able to autonomously generate waypoints for the bot in order to navigate the environment.
 
