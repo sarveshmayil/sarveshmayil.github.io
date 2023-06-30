@@ -20,11 +20,19 @@ The odometry system uses encoder measurements from the motors to update the robo
 
 ##### Perception
 
-The perception portion of the MBot is primarily composed of a SLAM system, which can be broken down into Mapping and Localization.
+The perception portion of the MBot is primarily composed of a SLAM system, which can be broken down into Mapping and Localization as shown in the pose estimation pipeline below.
+
+<img src="/images/botlab/slam_flowchart.png" width="600" />
 
 We use an occupancy grid to store the map, which is updated by using the LiDAR data. Each individual ray is used to update the map based on the bot's position estimate.
 
 The localization system is a particle filter with 2 main parts: an action model and a sensor model. The action model propagates the particles (which represent the bot's position estimate) forward in time to get a new pose esimate for the particle. The sensor model provides the probability that a given lidar scan matches the pose of the propagated particle given the current state of the map and gives a likelihood for each particle. The particle filter then resamples the particles using low-variance sampling and computes an estimated SLAM pose using the posterior distribution of the particles.
+
+The significant improvement of the SLAM pose over the pure odometry (encoder based) pose can be seen in the figure below.
+
+<img src="/images/botlab/slam_vs_odom.png" width="500" />
+
+We see that the SLAM pose (blue) is almost identical to the true pose (green) as opposed to the pure odometry pose (light green), which experiences significant drift over time.
 
 ##### Reasoning
 
