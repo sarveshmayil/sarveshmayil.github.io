@@ -20,7 +20,8 @@ Education
 Work experience
 ======
 * Summer 2023: Deep Learning / Perception Intern @ Robotic Research / RRAI
-  * Developing automatic semantic segmentation tools using Facebook AI Research's state-of-the-art [Segment Anything Model](https://segment-anything.com/) (SAM)
+  * Using Facebook AI Research's state-of-the-art [Segment Anything Model](https://segment-anything.com/) (SAM) to develop automatic semantic/panoptic segmentation tools in image and lidar domains
+  * Developed general use lidar projection package to transform and project point clouds from 3D to 2D
 
 * Summer 2022: Robotics Software Engineering Intern @ Robotic Research / RRAI
   * Built containerized version of drone simulation using Docker to improve computational efficiency and speed up development process while maintaining familiar interfacing
@@ -29,7 +30,7 @@ Work experience
 Skills
 ======
 * Languages: Python, C++, Matlab
-* Packages: ROS, PyTorch, Keras, Tensorflow, Sci-Kit Learn
+* Packages: ROS, PyTorch, Keras, Tensorflow, Sci-Kit Learn, OpenCV
 * Software: Linux, Docker, Solidworks, Arduino
 
 Publications
