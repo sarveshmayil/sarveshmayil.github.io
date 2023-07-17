@@ -40,7 +40,7 @@ Three different methods for block detection were tested for the perception syste
 
 (2) The second method incorporates depth information. Under the assumption that the center of the desired color segmentation is on the top surface of the block, we set an upper and lower bound on the depth value. Therefore, by extracting the surface pointed upward, we can determine the center of the top surface. The results for this method are shown in orange below.
 
-(2) The third method employs a color refinement strategy, which is based off the premise that the top surface of the blocks have a slightly different color to the sides. Therefore, setting both an upper and lower bound on the HSV value in the segmentation allows us to extract just the top surface of the block. The results of this method are shown in purple in the figure below.
+(3) The third method employs a color refinement strategy, which is based off the premise that the top surface of the blocks have a slightly different color to the sides. Therefore, setting both an upper and lower bound on the HSV value in the segmentation allows us to extract just the top surface of the block. The results of this method are shown in purple in the figure below.
 
 <img src="/images/armlab/detection.png" width=500>
 
