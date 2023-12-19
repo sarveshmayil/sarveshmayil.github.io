@@ -11,16 +11,16 @@ redirect_from:
 
 Education
 ======
+* M.S. in Robotics, University of Michigan - 2023
 * B.S. in Mechanical Engineering, Texas A&M University - 2022
   * Minor in Computer Science
   * Summa Cum Laude
   * Engineering Honors
-* M.S. in Robotics, University of Michigan - 2023
 
 Work experience
 ======
 * Summer 2023: Deep Learning / Perception Intern @ Robotic Research / RRAI
-  * Integrated state-of-the-art models such as Facebook AI's [Segment Anything Model](https://segment-anything.com/) (SAM) and [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO) to develop automatic & human-in-the-loop semantic/panoptic segmentation tools in image and LiDAR domains
+  * Integrated state-of-the-art object detection and image segmentation models to achieve simultaneous semantic/panoptic segmentation of image and lidar data
   * Developed general use point cloud manipulation package for 3D transformations, 3D to 2D projections using camera calibration data
 
 * Summer 2022: Robotics Software Engineering Intern @ Robotic Research / RRAI
@@ -31,7 +31,7 @@ Skills
 ======
 * Languages: Python, C++, Bash, Matlab
 * Packages: ROS, PyTorch, Keras, Tensorflow, Sci-Kit Learn, OpenCV
-* Software: Linux, Git, Docker, Solidworks, Arduino
+* Software: Linux, Git, Docker
 
 Publications
 ======
