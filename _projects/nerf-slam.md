@@ -13,7 +13,7 @@ The code for this project can be found [here](https://github.com/sarveshmayil/Ne
 
 Below, we demonstrate NeRF-SLAM performing SLAM and doing 3D reconstruction for one of the Replica datasets. The video is sped up 4x and does not convey real-time performance.
 
-<img src="/images/nerf-slam/room0-building-nerf.gif" />
+<img src="/images/nerf-slam/room0-building-nerf.gif" style="display: block; margin: 0 auto" />
 
 Some qualitative comparisons for NeRF-SLAM's performance on real-world custom datasets are shown below. On the left is the real image from the video and on the right is a recreated image from the NeRF at approximately the same location.
 

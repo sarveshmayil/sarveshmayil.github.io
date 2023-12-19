@@ -37,7 +37,7 @@ Setting up the data for model training and inference was critical to achieving g
 
 The data provided by the bubble sensors are depth images, which are filtered to reduce noise and then projected using camera intrinsics to obtain a pointcloud of the bubble surface. Due to the bubble surface being a surface and not an enclosed object as formulated in other neural SDF representations, here the signed-distance value for a point is corresponding to the signed distance of the point from the nominal surface along the camera axis. However, as further figures show, the approximated SDF values were good enough for training the Object Module and it is able to represent the bubble surface relatively well.
 
-For training the VIRDO model, the contact patch $Q$ is found by comparing the deformed depth image to a nominal reference depth image and filtering points with a depth imprint greater than a threshold value $\varepsilon$. Where $Q := \{ p \in P \in \mathbb{R}^3 : |p-nom| > \varepsilon \}$
+For training the VIRDO model, the contact patch $Q$ is found by comparing the deformed depth image to a nominal reference depth image and filtering points with a depth imprint greater than a threshold value $\varepsilon$. Where $Q := \{ p \in P \in \mathbb{R}^3 : \vert p-nom \vert > \varepsilon \}$
 
 The dataset used for training and testing of the VIRDO and VIRDO++ models was a series of grasps by the Soft Bubble Grippers on a 10 mm diameter cylindrical rod. It consisted of 35 total trajectories, each of which having a length of 10 timesteps. 30 of the trajectories were used for training and the remainder were held out and used for testing.
 

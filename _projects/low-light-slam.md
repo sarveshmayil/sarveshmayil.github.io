@@ -12,15 +12,15 @@ We compare the performance of four different image enhancement modules (Enlighte
 
 A qualitative comparison of the performance of each of the image enhancement modules can be seen below.
 
-<img src="/images/LL-slam/LL-slam-comparison.png" />
+<img src="/images/LL-slam/LL-slam-comparison.png" style="display: block; margin: 0 auto" />
 
 After performing SLAM with the entire pipelines, we see best trajectory results for each SLAM framework on the datasets.
 
-<img src="/images/LL-slam/LL-slam-tracking.png" />
+<img src="/images/LL-slam/LL-slam-tracking.png" style="display: block; margin: 0 auto" />
 
 We see the real-time performance of the ORB-SLAM3 and SuperPoint-SLAM frameworks on a KITTI sequence below. (ORB-SLAM3 on top and SuperPoint-SLAM below). The green points represent detected features.
 
-<img src="/images/LL-slam/kitti-orb3.gif" width="700"/>
-<img src="/images/LL-slam/kitti-superpoint.gif" width="700"/>
+<img src="/images/LL-slam/kitti-orb3.gif" width="700" style="display: block; margin: 0 auto" />
+<img src="/images/LL-slam/kitti-superpoint.gif" width="700" style="display: block; margin: 0 auto" />
 
 The full report for this work and results can be found [here](https://arxiv.org/abs/2304.11310)
