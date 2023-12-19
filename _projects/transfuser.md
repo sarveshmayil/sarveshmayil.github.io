@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Vehicle Visual Control in Simulation"
-excerpt: "Using neural networks to drive a car in CARLA<br/><img src='/images/LL-slam/kitti.gif' width='500'>"
+excerpt: "Using neural networks to drive a car in CARLA<br/><img src='/images/transfuser/carla.png' width='500'>"
 collection: projects
 ---
 
