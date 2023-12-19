@@ -17,13 +17,13 @@ The base controller used for waypoint following consists of longitudinal and lat
 This project utilizes both image and lidar sensors mounted on the vehicle in CARLA in order to perform visual-based control and adjacent perception tasks. The neural network, based on the work of TransFuser++, is designed to take in a single RGB image, a lidar birds-eye-view (BEV) image, the vehicle's current speed, and a local waypoint as input. It then predicts a trajectory, consisting of target points and target speeds, to reach the local waypoint. A sample RGB image and lidar BEV image are shown below.
 
 <p float="center">
-  <img src="/images/transfuer/sample_rgb.jpg" width="400" />
-  <img src="/images/transfuser/sample_lidar.jpg" width="400" /> 
+  <img src="/images/transfuser/sample_rgb.jpg" width="400" />
+  <img src="/images/transfuser/sample_lidar.jpg" width="300" /> 
 </p>
 
 Transfuser++ performs early fusion with image and lidar data through a transformer-based backbone as seen in the architecture below.
 
-<img src="/images/transfuser/transfuser_backbone.png" width="800" style="display: block; margin: 0 auto" />
+<img src="/images/transfuser/transfuser_backbone.png" width="700" style="display: block; margin: 0 auto" />
 
 This backbone performs a multi-modal fusion between the image and lidar feature maps at multiple resolutions throughout the feature extractor. The outputted feature vector from this backbone is then used for downstream tasks such as planning, depth estimation, semantic segmentation, object detection, etc. Because the model is trained on these auxiliary tasks, the feature extractor learns to encode extremely relevant information in the feature vector. The model uses this feature vector to predict goal velocities and waypoints. The entire TransFuser++ model architecture can be seen below, which shows the Transfuser backbone and waypoint/target speed prediction networks as well as the auxiliary prediction heads.
 
@@ -34,7 +34,7 @@ TransFuser++ shows impressive performance while only using a single camera and b
 
 To make these improvements, we create an agent that sets up three cameras on the front of the vehicle. One facing straight ahead, and two cameras angled left and right at an angle of 30 degrees. We found that the best method of using the additional image data was to stack the images vertically and fine-tune an existing model to learn the redundancy in image information. Additionally, we introduce several different types of noise to the images to introduce some regularization into the model such that it is robust to disturbances to individual cameras. To add random image noise that may occur in cameras due to a number of reasons such as circuit nosie or low-light conditions, we randomly add gaussian, poisson, and salt & pepper noise to the images with some probability. We also change the image exposure in order to introduce robustness to badly calibrated cameras. Finally, to ensure that the model takes advantage of the redundancy encoded in the right and left image overlap with the main front camera, random patches of the images are made to be completely black to mimic debris covering the camera. Some examples of the noisy images are shown below
 
-<img src="/images/transfuser/NoisyImages.png" width="800" style="display: block; margin: 0 auto" />
+<img src="/images/transfuser/NoisyImages.jpg" width="700" style="display: block; margin: 0 auto" />
 
 ### Results
 We fine-tune a pretrained Transfuser++ model by simultaneous evaluating two Transfuser++ models: one functions as the supervisory model, receiving single camera and lidar input (as the original model was designed), while the other serves as the trainable model, receiving three cameras and lidar input. Hence, through imitation, the trainable model can learn to relate and extract extra image information for downstream trajectory and speed predictions. We conduct training in five CARLA worlds, with 280 unique routes and random weather as well as the added random noise. Qualitative comparisons for the models are shown below.
