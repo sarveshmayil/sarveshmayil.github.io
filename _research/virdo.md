@@ -1,6 +1,6 @@
 ---
 title: "Visuo-Tactile Implicit Representation of Deformable Objects (VIRDO)"
-excerpt: "Visuo-tactile dynamics and state estimation for soft bubble membrane sensor<br/><img src='/images/rvp/scenario1.gif' width='300'>"
+excerpt: "Visuo-tactile dynamics and state estimation for soft bubble membrane sensor<br/><img src='/images/virdo/rotating_state_est.gif' width='300'>"
 collection: research
 ---
 
@@ -53,6 +53,8 @@ The model is able to accurately predict wrenches given the current state and act
 <img src="/images/virdo/virdopp_wrench_pred.png" width="600" style="display: block; margin: 0 auto" />
 
 Additionally, the trained VIRDO++ model is evaluated on a state estimation task, where the contact embedding is learned through a particle-filter like process (in the inference case, the contact embedding at the initial state would be unknown). Here, the $n$ contact embedding samples are randomly initialized and propagated through the trained VIRDO++ model. Based on the calculated losses, backpropagation is performed to update the contact embeddings. Using the L1 loss between the predicted and ground truth wrench, weights are given to each contact embedding sample and used to re-sample with some added noise. The contact embedding with the highest weight is used for state estimation.
+
+<img src="/images/virdo/rotating_state_est2.gif" width="800" style="display: block; margin: 0 auto" />
 
 The figure below shows the results of this filtering-based state estimation for a single trajectory. We see that the model is able to learn how the deformations in the bubble surface change given only knowledge of the current state and the action to be taken. The model performs well in predicting how the deformation will change given knowledge of the current contact embedding and wrench because the Action Module is able to accurately use the action to predict the contact embedding and wrench prediction at the next timestep. This allows the Deformation and Object Modules to reconstruct the predicted deformed shape.
 
